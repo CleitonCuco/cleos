@@ -22,7 +22,7 @@ print_string:
   or al,al
   jz .done
   mov ah,0x0e
-  mov bh,255
+  mov bh,0
   int 10h
   jmp print_string
 .done:
