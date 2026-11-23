@@ -64,4 +64,4 @@ stage2:
 
 msg_stage2 db 'by seeing this it means the stage 2 loading attempt did not suck much',0
 
-times (STAGE2_SECTORS*512) - ($  stage2) db 0
+times (STAGE2_SECTORS*512) - ($ - stage2) db 0
